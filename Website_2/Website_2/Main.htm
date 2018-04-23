@@ -1,0 +1,147 @@
+<!---
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    当前登录的用户名：<TMPL_VAR name="UserName"/>
+    <ul>
+        <li><a href="Website_2.cgi?mod=netdisk&action=list">网盘</a></li>
+        <li><a href="Website_2.cgi?mod=<TMPL_VAR name='Name'/>&action=list">查询或修改信息</a></li>
+        <li><a href="Website_2.cgi?mod=value&action=list">评价</a></li>
+    <!--    <li><a href="Website_2.cgi?mod=student&action=list">学生</a></li>
+        <li><a href="Website_2.cgi?mod=teacher&action=list">教师</a></li> 
+    </ul>
+</BODY>
+</HTML>
+-->
+
+<html>
+<head>
+    <title>论坛</title>
+    <meta http-equiv="Content-Type" content="Microsoft Visual Studio" />
+    <meta name="description">
+    <link rel="stylesheet" href="./css/re.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <img src="./images/sx.jpg" alt="" id="logo">
+        <div id="header">
+           
+        </div>
+        <div class="main">
+
+            <a style="word-spacing:360px"  href="#" class="a1" target="_blank" rel="nofollow">论坛中心 当前登录的用户名：<tmpl_var name="UserName" /></a>
+            </div>
+            <div class="btn-toolbar" role="toolbar">
+                   <a href="Website_2.cgi?mod=netdisk&action=list">网盘</a>&nbsp;&nbsp;&nbsp;
+                   <a href="Website_2.cgi?mod=<tmpl_var name='Name' />&action=list">查询或修改信息</a>&nbsp;&nbsp;&nbsp;
+                   <a href="Website_2.cgi?mod=value&action=list">评价</a>&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+
+        论坛菜单</a>　<a href="http://www.sxfsc.com/search.asp">论坛搜索</a>　<a href="http://www.sxfsc.com/help.asp">帮助</a>
+    </div>
+    <div class="YourPath">
+        您的位置：
+        <script language="JavaScript" type="text/javascript">
+            BoardListMenu()
+        </script><div id="Board" class="menu"><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=1"><b>版块分类1</b></a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=3">&nbsp;&nbsp;├ 论坛分类A</a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=4">&nbsp;&nbsp;├ 论坛分类B</a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=2"><b>版块分类2</b></a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=5">&nbsp;&nbsp;├ 论坛分类C</a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=6">&nbsp;&nbsp;├ 论坛分类D</a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=7">&nbsp;&nbsp;├ 论坛分类E</a></div><div class="menuitems"><a href="http://www.sxfsc.com/board.asp?boardid=8">&nbsp;&nbsp;├ 论坛分类F</a></div></div>
+        <a onmouseover="dropdownmenu(this, event, &#39;Board&#39;);" href="http://www.sxfsc.com/Index.asp">简约论坛</a>&nbsp;-&gt;&nbsp;论坛首页
+    </div><div class="mtop"></div><div class="html">
+        <div style="text-align:left;padding:5px;border-top:#b6d3eb 1px solid">
+            <div style="float:right;text-align:right">
+                <div style="margin-top:4px">新进来宾:<b><a target="_blank" href="http://www.sxfsc.com/userinfo.asp?name=longzhuc" title="查看 longzhuc 的资料">longzhuc</a></b>, 会员总数:20</div>
+                <div>总帖数:31, 主题数:19, 今日帖数:<font color="blue">0</font>, 昨日帖数:0</div>
+            </div>
+            <div><marquee width="60%" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" style="width: 60%;"><font color="#0099FF"><b>论坛公告：</b></font>● <a href="javascript:onclick=openwin('preview.asp?action=placard&id=1',600,400,'yes')">简约论坛v4终于来了&nbsp;<span style="font-size:10px">[2014-4-22 18:06:48]</span></a>&nbsp;&nbsp;&nbsp; </marquee></div>
+            <div><form method="POST" action="http://www.sxfsc.com/login.asp?action=login" style="margin:0"><input size="5" name="name" class="text" onfocus="this.value=&#39;&#39;" value="评价"> <input size="15" name="name" class="text" onfocus="this.value=&#39;&#39;" value=""> </form></div><div class="title" style="border-bottom:#b6d3eb 1px solid"><img src="./论坛首页 - 简约论坛_files/-.gif" onclick="bbskey(1,&quot;Skins/blue/&quot;)" id="N_1" style="float:right;margin-right:10px;margin-top:10px;cursor:pointer" align="absmiddle"><a href="http://www.sxfsc.com/board.asp?boardid=1">版块分类1</a></div>
+            <div id="S_1">
+                <table border="0" width="100%" cellspacing="0" cellpadding="3" style="background:#f5f5f5;color:#777">
+                    <tbody>
+                        <tr>
+                            <td style="width:48px">　</td>
+                            <td style="text-align:left;padding-top:5px">论坛版块</td>
+                            <td style="width:92px">主题数</td>
+                            <td style="width:80px">总帖数</td>
+                            <td style="width:250px">最后发表</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align:center;border-top:#b6d3eb 1px solid">
+                    <div style="text-align:left;margin-top:3px;width:250px;float:right">
+                        <div style="overflow:hidden;padding:3px 0;margin-top:6px"><img align="absmiddle" src="./论坛首页 - 简约论坛_files/1.Gif"> <a href="http://www.sxfsc.com/topic.asp?id=19&boardid=3&tb=1">速度</a></div>
+                        <div style="padding:3px 0"><font color="#999">by</font> <a href="http://www.sxfsc.com/userinfo.asp?name=lys" title="查看lys的资料 ">lys</a> <font color="#999"> - 2016-5-28 23:04:20</font></div>
+                    </div>
+                    <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=3"><img border="0" src="./论坛首页 - 简约论坛_files/1(1).gif" alt="论坛分类A"></a></div>
+                    <div class="boardimg1">27</div>
+                    <div class="boardimg1">16</div>
+                    <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=3">论坛分类A</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                    <div style="text-align:left;margin:3px auto"><img src="./论坛首页 - 简约论坛_files/bo.gif" align="absmiddle"> 论坛分类A</div>
+                    <div class="boardname" style="color:#888">版主：暂无</div>
+                </div><div style="text-align:center;border-top:#b6d3eb 1px solid">
+                    <div style="text-align:left;margin-top:3px;width:250px;float:right"><div style="margin:15px 0 0 0">特殊论坛，发帖信息保密！</div></div>
+                    <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=4"><img border="0" src="./论坛首页 - 简约论坛_files/2.gif" alt="论坛分类B"></a></div>
+                    <div class="boardimg1">0</div>
+                    <div class="boardimg1">0</div>
+                    <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=4">论坛分类B</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                    <div style="text-align:left;margin:3px auto"><img src="./论坛首页 - 简约论坛_files/bo.gif" align="absmiddle"> 论坛分类B</div>
+                    <div class="boardname" style="color:#888">版主：暂无</div>
+                </div>
+            </div><div style="width:100%">
+                <div class="title"><img src="./论坛首页 - 简约论坛_files/-.gif" style="float:right;margin-right:10px;margin-top:10px;cursor:pointer" align="absmiddle" onclick="bbskey(2,&quot;Skins/blue/&quot;)" id="N_2"><a href="http://www.sxfsc.com/board.asp?boardid=2">版块分类2</a></div>
+                <div id="S_2" style="border-bottom:#b6d3eb 1px solid">
+                    <div style="float:left;width:25%">
+                        <div style="width:220px">
+                            <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=5"><img border="0" src="./论坛首页 - 简约论坛_files/5.gif" alt="论坛分类C"></a></div>
+                            <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=5">论坛分类C</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                            <div class="boardname">主题:0, 总帖:0</div>
+                            <div class="boardname" style="color:#888">版主：暂无</div>
+                        </div>
+                    </div><div style="float:left;width:25%">
+                        <div style="width:220px">
+                            <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=6"><img border="0" src="./论坛首页 - 简约论坛_files/6.gif" alt="论坛分类D"></a></div>
+                            <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=6">论坛分类D</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                            <div class="boardname">主题:3, 总帖:4</div>
+                            <div class="boardname" style="color:#888">版主：暂无</div>
+                        </div>
+                    </div><div style="float:left;width:25%">
+                        <div style="width:220px">
+                            <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=7"><img border="0" src="./论坛首页 - 简约论坛_files/7.gif" alt="论坛分类E"></a></div>
+                            <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=7">论坛分类E</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                            <div class="boardname">主题:0, 总帖:0</div>
+                            <div class="boardname" style="color:#888">版主：暂无</div>
+                        </div>
+                    </div><div style="float:left;max-width:25%">
+                        <div style="width:220px">
+                            <div style="float:left;padding:10px"><a href="http://www.sxfsc.com/board.asp?boardid=8"><img border="0" src="./论坛首页 - 简约论坛_files/8.gif" alt="论坛分类F"></a></div>
+                            <div class="boardname"><b><a href="http://www.sxfsc.com/board.asp?boardid=8">论坛分类F</a></b> <font style="color:red" title="今日新贴数：0">(0)</font></div>
+                            <div class="boardname">主题:0, 总帖:0</div>
+                            <div class="boardname" style="color:#888">版主：暂无</div>
+                        </div>
+                    </div>
+                </div>
+            </div><table border="0" width="100%" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="title1"><div style="float:right"><img src="./论坛首页 - 简约论坛_files/-.gif" style="margin-right:10px;margin-top:10px;cursor:pointer" align="absmiddle" onclick="bbskey(-1,&quot;Skins/blue/&quot;)" id="N_-1"></div>&#187; 论坛联盟 [<a href="http://www.sxfsc.com/link.asp" target="hiddenframe" onclick="AutoLink()">自助申请连接</a>]</div>
+                            <div id="S_-1">
+                                <div id="link" style="text-align:left;margin-left:10px"><table border="0" width="94%" cellpadding="0" cellspacing="5"><tbody><tr><td><a target="_blank" href="http://www.74177.com/" title="网络电视直播">网络电视直播</a>&nbsp;&nbsp;</td></tr><tr><td><a target="_blank" href="http://www.74177.com/bbs"><img src="./论坛首页 - 简约论坛_files/bbslogo.gif" border="0" title="简约论坛v4" width="88" height="31"></a>&nbsp;&nbsp;</td></tr></tbody></table></div><div id="showaddlink" name="showaddlink" style="display:none;text-align:left;margin-left:50px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><iframe name="hiddenframe" frameborder="0" height="0" id="hiddenframe"></iframe>
+        </div><div class="bottom"><span id="ver">Powered by <a href="http://www.74177.com/" target="_blank"><span style="color:#ff0000;font-weight: bold">简约论坛v4</span></a></span> Copyright &#169; 2014 <a href="http://www.74177.com/"><b><font color="#ff00ff">www.</font><font color="#990000">74177</font><font color="blue">.com</font></b></a>. All rights reserved.</div>
+
+    </div>
+</body>
+</html>

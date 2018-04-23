@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <link rel="stylesheet" href="css/Login.css" />
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<!--
+    <form action="Website_2.cgi" method="post">
+        <input type="hidden" name="mod" value="main" />
+        <input type="hidden" name="action" value="loginSubmit" />
+        用户名：<input type="text" name="username" value="<TMPL_VAR name='UserName' />"/><br />
+        密码：<input type="password" name="password" /><br />
+        请选择教师还是学生：<input type="radio" name="mangement" value="students" id="students" /><label for="students">学生</label>
+        <input type="radio" name="mangement" value="teachers" id="teachers" /><label for="teachers">教师</label>
+        <input type="radio" name="mangement" value="admin" id="admin" /><label for="admin">管理员</label><br />
+        <input type="submit" name="btnLogin" value="登录" />
+        <label><TMPL_VAR name="msg" /></label>
+    </form>  
+  -->
+
+      <form action="Website_2.cgi" method="post">
+        <div id="header">
+            <div class="header_title">
+                <span class="title_con">学工系统</span>
+            </div>
+        </div>
+
+        <div id="content">
+            <center>
+                <div class="con">
+                    <div class="con_title">
+                        <span class="con_title_sp">欢迎登录学工系统</span>
+                    </div>
+                    <div class="con_panel">
+                        <div class="con_input">
+                            <span>用户名：</span><input type="text" placeholder="学号/工号" name="username" value="<TMPL_VAR name='UserName' />" />
+                        </div>
+                        <div class="con_input">
+                            <span>密&nbsp;&nbsp;&nbsp;&nbsp;码：</span><input type="text" placeholder="密码" name="password" />
+                        </div>
+                        <div class="con_select">
+                            <input type="hidden" name="mod" value="main" />
+                            <input type="hidden" name="action" value="loginSubmit" />
+                            <input type="radio" name="mangement" value="students" id="students" /><label for="students">学生</label>
+                            <input type="radio" name="mangement" value="teachers" id="teachers" /><label for="teachers">教师</label>
+                            <input type="radio" name="mangement" value="admin" id="admin" /><label for="admin">管理员</label>
+                        </div>
+                        <input type="submit" value="登    录" class="submit-btn" name="btnLogin" />
+                    </div>
+                </div>
+            </center>
+        </div>
+    </form>
+
+</BODY>
+</HTML>

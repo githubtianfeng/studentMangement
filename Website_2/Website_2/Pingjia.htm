@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0023)http://localhost:58884/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="IE=5.0000"
+          http-equiv="X-UA-Compatible">
+
+    <script language="JavaScript">
+        var onecount;
+        onecount = 0;
+        subcat = new Array();
+
+        subcat[0] = new Array("李伟", "5", "6");
+        subcat[1] = new Array("张伟", "3", "4");
+        subcat[2] = new Array("高等数学", "2", "3");
+        subcat[3] = new Array("计算机科学与技术", "1", "2");
+        subcat[4] = new Array("计算机系", "0", "1");
+        subcat[5] = new Array("数学系", "0", "8");
+        subcat[6] = new Array("动漫设计", "1", "7");
+        subcat[7] = new Array("大学英语", "2", "5");
+        onecount = 8;
+
+        function changelocation(locationid, Pname_Search) {
+            strobj = eval(document.getElementById(Pname_Search));
+            strobj.length = 0;
+            var locationid = locationid;
+            var i;
+            for (i = 0; i < onecount; i++) {
+                if (i == 0) {
+                    strobj.options[strobj.length] = new Option("-请选择 -", "", true);
+                }
+                if (subcat[i][1] == locationid) {
+                    strobj.options[strobj.length] = new Option(subcat[i][0], subcat[i][2]);
+                }
+            }
+            strobj.onchange();
+        }
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>教师评价、学生论坛</title>
+    <meta name="author" content="教师评价、学生论坛">
+    <meta name="description" content="教师评价、学生论坛">
+    <link href="pingjia/xiao5u.css"
+          rel="stylesheet" type="text/css">
+
+    <script src="inc/check.js"></script>
+
+    <meta name="GENERATOR" content="MSHTML 11.00.10586.420">
+</head>
+<body oncontextmenu="self.event.returnValue=false">
+    <table width="966" align="center" background="pingjia/sx.jpg"
+           cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td id="banner" colspan="3"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="960" align="center" bgcolor="#fafafa" cellspacing="0" cellpadding="0">
+        <form name="fm" id="form1" onsubmit="return checkForm(this)" action="Website_2.cgi"
+              method="post">
+            <input type="hidden" name="mod" value="value" />
+            <input type="hidden" name="action" value="Submit" />
+            <tbody>
+                <tr>
+                    <td id="menu" colspan="3">
+                        请选择评价信息：   <select name="DName" onchange="changelocation(this.options[this.selectedIndex].value,'MName')">
+                            <option value="">
+                                -请选择院系-
+                            </option>
+                            <option value="1">计算机系</option>
+                            <option value="8">数学系</option>
+                        </select>   <!--二级选项-->   <select name="MName" onchange="changelocation(this.options[this.selectedIndex].value,'CName')">
+                            <option value="">
+                                -请选择专业-
+                            </option>
+                        </select>   <!--三级选项-->   <select name="CName"
+                                                          onchange="changelocation(this.options[this.selectedIndex].value,'TName')">
+                            <option value="">
+                                -请选择科目-
+                            </option>
+                        </select>   <select name="TName"
+                                            onchange="">
+                            <option value="" selected="">-请选择教师-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="center" id="info">
+                    <td width="75%"><b>评价内容 </b></td>
+                    <td><b> 评价分数 </b></td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">1.对教学工作有热情，讲课认真、投入</td>
+                                    <td>
+                                        <input name="Option1" title="请评价“第1题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option1" title="请评价“第1题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option1" title="请评价“第1题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option1" title="请评价“第1题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option1" title="请评价“第1题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">2.教材选用适当，教学参考书有助于学习</td>
+                                    <td>
+                                        <input name="Option2" title="请评价“第2题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option2" title="请评价“第2题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option2" title="请评价“第2题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option2" title="请评价“第2题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option2" title="请评价“第2题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">3.授课内容充实，先进，信息量大</td>
+                                    <td>
+                                        <input name="Option3" title="请评价“第3题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option3" title="请评价“第3题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option3" title="请评价“第3题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option3" title="请评价“第3题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option3" title="请评价“第3题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">4.教学方法得当，讲课思路清晰，阐述准确</td>
+                                    <td>
+                                        <input name="Option4" title="请评价“第4题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option4" title="请评价“第4题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option4" title="请评价“第4题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option4" title="请评价“第4题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option4" title="请评价“第4题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">5.有意识引导学生发现问题、思考问题，注意介绍本学科的前沿</td>
+                                    <td>
+                                        <input name="Option5" title="请评价“第5题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option5" title="请评价“第5题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option5" title="请评价“第5题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option5" title="请评价“第5题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option5" title="请评价“第5题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">6.辅导、答疑和作业批改认真</td>
+                                    <td>
+                                        <input name="Option6" title="请评价“第6题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option6" title="请评价“第6题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option6" title="请评价“第6题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option6" title="请评价“第6题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option6" title="请评价“第6题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">7.教学纪律（无缺课、迟到、提前下课、上课接手机等）</td>
+                                    <td>
+                                        <input name="Option7" title="请评价“第7题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option7" title="请评价“第7题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option7" title="请评价“第7题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option7" title="请评价“第7题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option7" title="请评价“第7题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">8.教师的言传身教有助于学生治学与做人</td>
+                                    <td>
+                                        <input name="Option8" title="请评价“第8题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option8" title="请评价“第8题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option8" title="请评价“第8题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option8" title="请评价“第8题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option8" title="请评价“第8题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">9.教师上课学生的听课率</td>
+                                    <td>
+                                        <input name="Option9" title="请评价“第9题”~!" type="radio"
+                                               value="10"> 10	 <input name="Option9" title="请评价“第9题”~!" type="radio"
+                                                                        value="8"> 8	 <input name="Option9" title="请评价“第9题”~!" type="radio"
+                                                                                               value="6"> 6	 <input name="Option9" title="请评价“第9题”~!" type="radio"
+                                                                                                                      value="4"> 4	 <input name="Option9" title="请评价“第9题”~!" type="radio"
+                                                                                                                                             value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr onmouseover="this.bgColor='#F0F7FF'"
+                    onmouseout="this.bgColor='#FAFAFA'">
+                    <td colspan="4">
+                        <table width="98%" align="center" cellspacing="5" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="75%">10.教师语言表述能力</td>
+                                    <td>
+                                        <input name="Option10" title="请评价“第10题”~!" type="radio" value="10">
+                                        10	 <input name="Option10" title="请评价“第10题”~!" type="radio" value="8">
+                                        8	 <input name="Option10" title="请评价“第10题”~!" type="radio"
+                                                    value="6"> 6	 <input name="Option10" title="请评价“第10题”~!" type="radio"
+                                                                           value="4"> 4	 <input name="Option10" title="请评价“第10题”~!" type="radio"
+                                                                                                  value="2"> 2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <b>你的意见或建议：</b><br><textarea rows="5" cols="120" name="txt1"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="5">
+                        <input name="Submit" onclick="return checkClass();" type="submit" value="提交评价">
+                        <input name="rsCount" id="rsCount" type="hidden" value="10">
+                    </td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+    <table width="966" align="center" background="pingjia/botbj.jpg"
+           cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td height="60" align="center">
+                    <script language="JavaScript" src="http://s84.cnzz.com/stat.php?id=585346&amp;web_id=585346"></script>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

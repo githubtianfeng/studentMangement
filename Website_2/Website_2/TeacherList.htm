@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <div id="header">
+        <img src="./images/sx1.jpg" alt="" id="logo">
+    </div>
+    <a href="Website_2.cgi?mod=teacher&action=addnew">新增</a>
+    <table>
+        <thead>
+            <tr><td>姓名</td><td>手机号</td><td>删除</td><td>修改</td></tr>
+        </thead>
+        <tbody>
+            <TMPL_LOOP name="teachers">
+                <tr><td><TMPL_VAR name="Name" /></td><td><TMPL_VAR name="PhoneNum" /></td>
+                <td><a href="Website_2.cgi?mod=teacher&action=delete&id=<TMPL_VAR name='Id' />">删除</td>
+                <td><a href="Website_2.cgi?mod=teacher&action=edit&id=<TMPL_VAR name='Id' />">修改</a></td></tr>
+            </TMPL_LOOP> 
+        </tbody>  
+    </table>
+
+</BODY>
+</HTML>

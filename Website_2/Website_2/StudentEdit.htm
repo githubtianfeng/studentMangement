@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <div id="header">
+        <img src="./images/sx.jpg" alt="" id="logo">
+    </div>
+    <form action="Website_2.cgi" method="post">
+        <input type="hidden" name="mod" value="student" />
+        <input type="hidden" name="action" value="editSubmit" />
+        <input type="hidden" name="Id" value="<TMPL_VAR name="Id"/>" />
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="Name"value="<TMPL_VAR name="Name" />" /></td>
+                <td>出生日期：</td>
+                <td><input type="date" name="BirthDay" value="<TMPL_VAR name= "BirthDay" />"/></td>
+            </tr>
+            <tr>
+                <td>身高：</td>
+                <td><input type="text" name="Height"  value="<TMPL_VAR name="Height" /> "/></td>
+                <td>体重：</td>
+                <td><input type="text" name="Weight" value="<TMPL_VAR name="Weight" />"/></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td><select name="GenderId"><tmpl_var name="GenderItems" /></select></td>
+                <td>籍贯：</td>
+                <td><input type="text" name="BirthPlace" value="<TMPL_VAR name="BirthPlace" />"/>
+            </tr>
+            <tr>
+                <td>名族：</td>
+                <td><select name="RaceId"><tmpl_var name="RaceItems" /></select></td>
+            </tr>   
+    </form>
+
+</BODY>
+</HTML>

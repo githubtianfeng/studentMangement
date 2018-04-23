@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <form action="Website_1.cgi" method="post">
+        <input type="hidden" name="mod" value="<TMPL_VAR name="choose"/>" /> 
+        <input type="hidden" name="action" value="list" />
+        用户名：<input type="text" name="username" /><br />
+        密码：<input type="password" name="password" /><br />
+        请选择教师还是学生：<input type="radio" name="mangement" value="students" id="students" /><label for="students">学生</label>
+        <input type="radio" name="mangement" value="teachers" id="teachers" /><label for="teachers">教师</label><br />
+        <input type="submit" name="btnLogin" value="登录" />
+    </form>
+</BODY>
+</HTML>

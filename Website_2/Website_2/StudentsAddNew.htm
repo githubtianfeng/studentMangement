@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<body>
+    <div id="header">
+        <img src="./images/sx.jpg" alt="" id="logo">
+    </div>
+    <form action="Website_2.cgi" method="post">
+        <input type="hidden" name="mod" value="student" />
+        <input type="hidden" name="action" value="addnewSubmit" />
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="Name" /></td>
+                <td>出生日期：</td>
+                <td><input type="date" name="BirthDay" /></td>
+            </tr>
+            <tr>
+                <td>身高：</td>
+                <td><input type="text" name="Height" /></td>
+                <td>体重：</td>
+                <td><input type="text" name="Weight" /></td>
+                <td></td>
+            </tr>  
+            <tr>        
+                <td>性别：</td>
+                <td><select name="GenderId"><TMPL_VAR name="GenderItems" /></select></td>
+                <td>籍贯：</td>
+                <td><input type="text" name="BirthPlace" />
+            </tr>  
+            <tr>
+                <td>名族：</td>
+                <td><select name="RaceId"><TMPL_VAR name="RaceItems"/></select></td>
+            </tr>
+        </table>
+        <input type="submit" value="保存" />
+    </form>
+</body>
+</HTML>

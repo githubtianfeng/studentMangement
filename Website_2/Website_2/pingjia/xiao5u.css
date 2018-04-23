@@ -1,0 +1,60 @@
+body {
+	margin: auto; font-size: 14px; background-image: url("bg.jpg"); background-repeat: repeat-x; background-color: rgb(141, 185, 210);
+}
+table {
+	border: 0px currentColor; border-image: none; width: 960px;
+}
+b {
+	font-size: 14px;
+}
+td {
+	font-size: 14px;
+}
+select {
+	font-size: 14px;
+}
+a:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a:active {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+a:hover {
+	color: rgb(255, 255, 0); text-decoration: underline;
+}
+#banner {
+	background: url("../images/logo.jpg"); width: 1002px; height: 163px; color: rgb(0, 75, 132); padding-left: 120px; font-family: "ºÚÌå"; font-size: 40px;
+}
+#menu {
+	background: url("../images/menubj.gif"); height: 41px; text-align: center; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold;
+}
+#menu a {
+	padding: 0px 20px;
+}
+#input {
+	background: none; border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold;
+}
+#info {
+	background: url("../images/infobj.jpg"); height: 32px; padding-left: 18px; font-size: 14px;
+}
+#BigTitle {
+	padding: 10px; line-height: 25px; font-size: 15px; font-weight: bold;
+}
+#Notice {
+	background: url("../images/Notice.jpg"); width: 350px; height: 337px;
+}
+#Noticeb {
+	margin: 160px 50px 60px 105px; color: rgb(51, 51, 51); font-size: 14px; font-weight: bold;
+}
+#Notice a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+#Notice a:hover {
+	color: rgb(0, 102, 255); text-decoration: underline;
+}
+#nopaper {
+	color: rgb(255, 0, 0); line-height: 40px; font-size: 14px; font-weight: bold;
+}
